@@ -11,7 +11,7 @@ arduino = serial.Serial('com7', 9600)
 while 1:
     rate(30)
     if arduino.inWaiting() > 0:
-        data = str(arduino.readline())
+        data = arduino.readline().decode('ascii')
         variables = data.split(' ')
         r = float(variables[0])
         angle = int(variables[1])
