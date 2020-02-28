@@ -29,4 +29,10 @@ This apparatus gives the following information:
 
 This information is transferred from the Arduino to a processing software. In this project, a python-based IDE called Pycharm is used. The serial port transfers the data. It requires importing of pyserial 3.4 and vpython 7.6 libraries for the same.
 Pyserial is used to acquire the data from the serial port. Vpython is the library that enables the plotting of 3D shapes.
-The program converts the information which is in the spherical coordinate system to the rectangular system and plots a point in 3D space. The output is displayed in a local web page.
+The program converts the information which is in the spherical coordinate system to the rectangular system and plots a point in 3D space. The output is displayed in a local web page. 
+
+Limitations:
+
+Perfect 3D view of the room was not obtained. Servo motors can turn only 180 degrees. In the apparatus, the horizontal servo has a 180 degree sweep and the vertical one has a 90 degree sweep. Hence only a quadrant of a sphere could be mapped.
+
+A LIDAR sensor provides better data than an ultrasonic sensor for this application.
